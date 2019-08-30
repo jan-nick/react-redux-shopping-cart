@@ -1,14 +1,13 @@
-import itemData from './itemData'
-
-export const addToCart = item => {
+export const addToCart = id => {
     return {
         type: 'ADD_TO_CART',
-        payload: item
+        id
     }
 }
-export const removeFromCart = () => {
+export const removeFromCart = id => {
     return {
-        type: 'REMOVE_FROM_CART'
+        type: 'REMOVE_FROM_CART',
+        id
     }
 }
 export const clearCart = () => {
@@ -16,13 +15,15 @@ export const clearCart = () => {
         type: 'CLEAR_CART'
     }
 }
-export const incrementItem = () => {
+export const incrementItem = id => {
     return {
-        type: 'INCREMENT_ITEM'
+        type: 'INCREMENT_ITEM',
+        id
     }
 }
-export const decrementItem = () => {
+export const decrementItem = id => {
     return {
-        type: 'DECREMENT_ITEM'
+        type: 'DECREMENT_ITEM',
+        id
     }
 }

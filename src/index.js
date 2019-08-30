@@ -4,10 +4,10 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App from './App'
 
-import cart from './reducers'
+import cartReducer from './reducers'
 
 let store = createStore(
-    cart,
+    cartReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 

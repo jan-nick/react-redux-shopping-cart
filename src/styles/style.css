@@ -107,9 +107,23 @@ body .app .cart-container .cart-items p {
   font-size: 1.2rem;
 }
 
+body .app .cart-container .cart-items .cart-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .app .cart-container .cart-items .cart-actions button {
   margin-right: 5px;
   width: 25px;
+  height: 25px;
+}
+
+body .app .cart-container .cart-items .cart-actions p {
+  margin-right: 10px;
 }
 
 body .app .cart-container .cart-footer {
